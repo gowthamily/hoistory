@@ -81,7 +81,7 @@ const initialHistoryList = [
 ]
 
 // Replace your code here
-class HistoryListApp extends Component {
+class App extends Component {
   state = {
     searchInput: '',
     historyList: initialHistoryList,
@@ -116,14 +116,15 @@ class HistoryListApp extends Component {
               alt="app logo"
               className="history-img"
             />
-            <div className="input-search-container">
-              <div className="search-logo-container">
-                <img
-                  src="https://assets.ccbp.in/frontend/react-js/search-img.png"
-                  alt="search icon"
-                  className="search-icon"
-                />
-              </div>
+          </div>
+          <div className="input-search-container">
+            <div className="search-logo-container">
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/search-img.png"
+                alt="search icon"
+                className="search-icon"
+              />
+
               <input
                 type="search"
                 className="search-input"
@@ -154,4 +155,4 @@ class HistoryListApp extends Component {
   }
 }
 
-export default HistoryListApp
+export default App
